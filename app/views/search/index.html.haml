@@ -1,0 +1,44 @@
+.container
+  .page-header
+    %h3
+      レストラン検索
+
+  .panel.panel-default
+    .panel-heading
+      .panel-title 検索条件
+    .panel-body
+      %form{:action => "#", :method => "post"}
+        .input-group
+          %input.form-control{:type => "text"}
+            %span.input-group-btn
+              %button.btn.btn-default{:type => "submit"}
+                %i.glyphicon.glyphicon-search
+
+  .panel.panel-info
+    .panel-heading
+      検索結果
+      (
+      %span
+        0
+      件 )
+    %table.table.table-striped.table-bordered
+      %thead
+        %tr.success
+          %td
+            名前
+          %td
+            住所
+          %td
+            店舗説明
+          %td
+            アクセス数
+      %tbody
+        %tr
+          %td
+            hoge
+          %td
+            foo
+          %td
+            bar
+          %td
+            1111
